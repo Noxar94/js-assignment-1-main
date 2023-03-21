@@ -52,13 +52,13 @@ const accountObject = {
     const accountBalance = totalIncome - totalExpenses;
 
     // account1 first and last name
-    const account1 = (accountObject.firstName) + "." +  (accountObject.lastName)
+    const accountName = (accountObject.firstName) + "." +  (accountObject.lastName)
 
     // Log the summary to the console
     prompt (
       ('Account Summary:\n') + 
       
-      ('Account:') + " " + (account1) + '\n' +
+      ('Account:') + " " + (accountName) + '\n' +
       
       ('Total Income: ' + totalIncome + 'kr\n') +
       
@@ -109,7 +109,7 @@ function menu() {
         accountObject.getSummary();
         break;
       case '6':
-        alert('Goodbye!');
+        prompt('Goodbye!');
         break;
       default:
         alert('Invalid choice. Please enter a number from 1 to 6.')
